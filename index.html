@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vermasoft.solution</title>
+    <!-- fav icon  -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <!-- font awesome for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-uncharted"> VermaSoft</i> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact us</a>
+          </li>
+          
+        </ul>
+         <form class="d-flex">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <button class="btn btn-dark" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Get Quote</button>
+        </form> 
+      </div>
+    </div>
+  </nav>
+  <!-- image slider  carousal-->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/banner.jpg" class="d-block w-100" alt="banner" height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/banner2.webp" class="d-block w-100" alt="banner" height="600px">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/banner3.jpg" class="d-block w-100" alt="banner" height="600px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- service cards -->
+  <div class="container-fluid d-block">
+    <h4 class="text-center mt-2"> Our Services</h4>
+    <div class="row">
+      <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="./images/website-designing-service.png" class="card-img-top" alt="web-design" height="200px" width="200px">
+      <div class="card-body">
+        <h5 class="card-title">Web-Design</h5>
+
+        <p class="card-text">Our web design service offers a comprehensive solution for creating visually appealing and functional websites..</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="./images/ui-and-ux-design-services.png" class="card-img-top" alt="Ui-Ux" height="200px" width="200px">
+      <div class="card-body">
+        <h5 class="card-title">Ui-Ux</h5>
+        <p class="card-text">UI (User Interface) and UX (User Experience) are two crucial aspects of web and mobile application design.</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="./images/android-application-development-service.jpg" class="card-img-top" alt="app" height="200px" width="200px">
+      <div class="card-body">
+        <h5 class="card-title">App Devlopement</h5>
+        <p class="card-text">App development is the process of creating software applications for mobile devices such as smartphones and tablets..</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <h4 class="text-center mt-2">  Our PortFolio</h4>
+    <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+      <img src="./images/Dine.webp" class="card-img-top" alt=" Restaurant app" height="200px" width="200px">
+      <div class="card-body">
+        <h5 class="card-title">Restaurant Website</h5>
+      
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+      <img src="./images/CMS.png" class="card-img-top" alt="CMS app" height="200px" width="200px">
+      <div class="card-body">
+        <h5 class="card-title">CMS Software</h5>
+        
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+      <img src="./images/Bank.png" class="card-img-top" alt=" Bank app" height="200px" width="200px">
+      <div class="card-body">
+        <h5 class="card-title">Banking App</h5>
+        
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="./images/ERP.jpg" class="card-img-top" alt=" ERP app" height="200px" width="200px">
+        <div class="card-body">
+          <h5 class="card-title">ERP Software</h5>
+        
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="./images/event.webp" class="card-img-top" alt=" Event app" height="200px" width="200px">
+        <div class="card-body">
+          <h5 class="card-title">Event Management System</h5>
+          
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+        <img src="./images/Medical-app.png" class="card-img-top" alt=" Medical app" height="200px" width="200px">
+        <div class="card-body">
+          <h5 class="card-title">Doctor Appointment App</h5>
+          
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</a>
+        </div>
+      </div>
+      </div>
+      </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Get a Quote <i class="fa-solid fa-comment"></i></h1>
+        <!-- font awesome icon -->
+        <!-- <i class="fa-solid fa-comment"></i> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- form tag from form controller -->
+        <form action=".." method="post">
+          <div class="mb-3 row">
+            <label for="Name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="Name" class="w-50">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" class="w-50">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="mobile" class="w-50">
+            </div>
+          </div>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-light"> 
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <h5 class="mt-4 mb-4"> Contact Us</h5>
+    
+          <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-location-dot" style="color: #B197FC;"></i> Indore</a>
+          <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-phone" style="color: #B197FC;"></i> 123</a>
+          <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-envelope" style="color: #B197FC;"></i> Indore@gmail.com</a>
+        
+      </div>
+      <div class="col-md-4">
+        <h5 class="mt-4 mb-4"> Useful Links</h5>
+        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+        <a class="nav-link active text-light" aria-current="page" href="./contact.html">Contact</a>
+        <a class="nav-link active text-light" aria-current="page" href="./about.html">About</a>
+
+      </div>
+      <div class="col-md-4">
+        <h5 class="mt-4 mb-4"> About Us</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore in molestiae nam quo odio amet sit laudantium ullam incidunt atque quod laborum obcaecati rerum dolor sequi ex provident, quaerat quis.
+      
+        </p>
+      </div>
+    </div>
+  </div>
+  <h6 class="text-center"> &copy;2024 All Rights Reserved</h6>
+</footer>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
